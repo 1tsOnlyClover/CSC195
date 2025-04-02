@@ -7,7 +7,7 @@ int main() {
 	char initial;
 	short age;
 	bool isAdult;
-	int zipcode;
+	unsigned int zipcode;
 	float wage;
 	short daysWorked;
 	float hoursWorkedPerDay[7];
