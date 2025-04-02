@@ -2,7 +2,9 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    cout << "Git is now tracking this project!" << endl;
-    return 0;
+    std:cout << "Hello, World!" << endl;
+    std:cout << "Git is now tracking this project!" << endl;
+    std:int age;
+    std:cout << "Enter Age" << endl;
+    std: cin >> age;
 }
