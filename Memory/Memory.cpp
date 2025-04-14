@@ -37,4 +37,14 @@ int main()
 	cout << &p << endl; // address of p
 	cout << *p << endl; // dereference p, get value in address stored in pointer
 
+
+	cout << "----------------------------------------------" << endl;
+
+	int number1 = 1;
+	int* hnum1 = new int(4);//allocates 1(size of datatype) bytes of memory and stores the value (number in parenthesis)
+
+	int* Arrnum = new int[4];//allocates [number in brackets] * (size of datatype) bytes of memory
+	//<< and >> are angle brackets, less than signs are singular < or >
+
+
 }
