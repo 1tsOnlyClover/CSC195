@@ -50,6 +50,11 @@ int main()
 		cout << &chemicals[i] << endl;
 	}
 
+	//for each
+	for (string chemical : chemicals) {
+		cout << chemical << endl;
+	}
+
 	cout << "----------------------------------------------" << endl;
 
 	string* p = chemicals; // pointer to the first element of the array
