@@ -36,9 +36,17 @@ int main()
 	cout << chemicals << endl; // returns address of first element in the array
 	cout << &chemicals[0] << endl;
 
+	cout << chemicals << endl;
+
+	cout << sizeof(chemicals) << endl; // returns the size of the array in bytes
+
+	cout << sizeof(chemicals[0]) << endl; // returns the size of the first element in bytes
+
+	int size = sizeof(chemicals) / sizeof(chemicals[0]); // calculates the number of elements in the array
+
 	cout << "----------------------------------------------" << endl;
 
-	for (int i = 0; i < (*chemicals).size(); i++) {
+	for (int i = 0; i < size; i++) {
 		cout << &chemicals[i] << endl;
 	}
 
