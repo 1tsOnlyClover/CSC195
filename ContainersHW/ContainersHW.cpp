@@ -7,7 +7,7 @@
 #include <map>
 using namespace std;
 
-string printWeekdays() {
+void printWeekdays() {
 	// Create an array to store weekdays with fixed size
 	string weekdays[7] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 	cout << "Weekdays:" << endl;
@@ -17,7 +17,7 @@ string printWeekdays() {
 	}
 }
 
-string printNumbers(){
+void printNumbers(){
 	// Create a vector to store numbers with dynamic size and freedom to add but removing happens to the end of the vector every time
 	vector<int> numbers{ 1, 2, 3, 4, 5 };
 	numbers.push_back(6);
@@ -30,7 +30,7 @@ string printNumbers(){
 	}
 }
 
-string printFruit() {
+void printFruit() {
 	// Create a list to store fruits with the ability to freely remove and add from the front and back
 	list<string> fruits{ "Apple", "Banana", "Cherry" };
 	fruits.push_front("Mango");
@@ -43,7 +43,7 @@ string printFruit() {
 	}
 }
 
-string printGroceries() {
+void printGroceries() {
 	// Create a map to store grocery items and their quantities
 	map<string, int> groceries;
 	groceries["Bananas"] = 5;
