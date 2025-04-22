@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 class Animal {
 public:
@@ -11,11 +12,12 @@ public:
 	int GetLimbs() { return m_limbs; }
 	void SetLimbs(int limbs) { m_limbs = limbs; }
 
-	~Animal() { // deconstructor
+	~Animal() { // destructor
 		delete m_ptr;
 	}
 
-	virtual void Travel();
+	virtual void Travel(); // virtual function
+	virtual void Speak() = 0; // pure virtual function
 protected:
 	int m_limbs;
 

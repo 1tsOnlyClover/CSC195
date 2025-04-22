@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{50ca049f-a91d-48da-9d4a-a92ebca98506}</ProjectGuid>
-    <RootNamespace>OOP</RootNamespace>
+    <ProjectGuid>{e4208649-11a0-4e45-8655-00bbcc255fbc}</ProjectGuid>
+    <RootNamespace>CClasses</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,15 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Animal.cpp" />
-    <ClCompile Include="Dog.cpp" />
-    <ClCompile Include="OOP.cpp" />
-    <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="C++ Classes.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Granite.cpp" />
+    <ClCompile Include="Rock.cpp" />
+    <ClCompile Include="Turquoise.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animal.h" />
-    <ClInclude Include="Dog.h" />
-    <ClInclude Include="Snake.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Granite.h" />
+    <ClInclude Include="Rock.h" />
+    <ClInclude Include="Turquoise.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
