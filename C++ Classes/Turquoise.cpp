@@ -1,12 +1,10 @@
 #include <iostream>
 #include "Turquoise.h"
-#include "Rock.cpp"
+#include "Rock.h"
 
 using namespace std;
 
-Turquoise::Turquoise() : Rock() {
-
-}
+Turquoise::Turquoise() : Rock() { ; };
 
 void Turquoise::read(ostream& ostream, istream& istream) {
 	ostream << "Enter details for Turquoise:" << endl;
@@ -20,7 +18,7 @@ void Turquoise::read(ostream& ostream, istream& istream) {
 	int typeInput;
 	istream >> typeInput;
 	type = static_cast<RockType>(typeInput);
-}
+};
 
 void Turquoise::write(ostream& ostream) {
 	ostream << "Turquoise Details:" << endl;
@@ -28,12 +26,12 @@ void Turquoise::write(ostream& ostream) {
 	ostream << "Color: " << color << endl;
 	ostream << "Matrix: " << matrix << endl;
 	ostream << "Rock Type: " << static_cast<int>(getType()) << endl; // Fixed static_cast syntax
-}
+};
 
 string Turquoise::getName() {
 	return name;
-}
+};
 
 RockType Turquoise::getType() {
 	return RockType::SEDIMENTARY; // Replace with appropriate RockType if defined  
-}
+};

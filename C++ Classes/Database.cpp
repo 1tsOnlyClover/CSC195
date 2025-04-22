@@ -3,13 +3,13 @@
 
 Database::Database() {
 	// Constructor implementation
-}
+};
 Database::~Database() {
 	// Destructor implementation
 	for (auto rock : rocks) {
 		delete rock; // Free allocated memory
 	}
-}
+};
 void Database::Create(RockType type) {
 	Rock* rock = nullptr;
 	switch (type) {
@@ -25,12 +25,12 @@ void Database::Create(RockType type) {
 	}
 	rock->read(std::cout, std::cin);
 	rocks.push_back(rock);
-}
+};
 void Database::DisplayAll() {
 	for (const auto& rock : rocks) {
 		rock->write(std::cout);
 	}
-}
+};
 void Database::Display(const std::string& name) {
 	for (const auto& rock : rocks) {
 		if (rock->getName() == name) {
@@ -39,4 +39,4 @@ void Database::Display(const std::string& name) {
 		}
 	}
 	std::cout << "Rock not found!" << std::endl;
-}
+};

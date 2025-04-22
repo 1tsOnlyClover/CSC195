@@ -15,4 +15,4 @@ private:
 
     string Granite::getCrystal() {  
        return crystal; // Implementation of getCrystal method  
-    }
+    };
