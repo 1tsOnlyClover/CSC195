@@ -7,26 +7,25 @@ using namespace std;
 Granite::Granite() : Rock() { ; };
 
 void Granite::read(ostream& ostream, istream& istream) {
-	ostream << "Enter details for Granite:" << endl;
-	ostream << "Name: ";
-	istream >> name;
-	ostream << "Color: ";
-	istream >> color;
+	Rock::read(ostream, istream);
 	ostream << "Crystal: ";
 	istream >> crystal;
-	ostream << "Rock Type: ";
-	int typeInput;
-	istream >> typeInput;
-	type = static_cast<RockType>(typeInput);
 };
 
 void Granite::write(ostream& ostream) {
-	ostream << "Granite Details:" << endl;
-	ostream << "Name: " << getName() << endl;
-	ostream << "Color: " << getColor() << endl;
+	Rock::write(ostream);
 	ostream << "Crystal: " << getCrystal() << endl;
-	ostream << "Rock Type: " << static_cast<int>(getType()) << endl; // Fixed static_cast syntax
 };
+
+void Granite::read(ifstream& istream) {
+	Rock::read(istream);
+	istream >> crystal;
+}
+
+void Granite::write(ofstream& ostream) {
+	Rock::write(ostream);
+	ostream << crystal;
+}
 
 string Granite::getName() {
 	return name;

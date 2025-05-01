@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OperatorOverload", "Operato
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fractions", "Fractions\Fractions.vcxproj", "{BC111271-D03E-4887-B05E-C946E26FF585}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer", "Pointer\Pointer.vcxproj", "{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -153,6 +155,14 @@ Global
 		{BC111271-D03E-4887-B05E-C946E26FF585}.Release|x64.Build.0 = Release|x64
 		{BC111271-D03E-4887-B05E-C946E26FF585}.Release|x86.ActiveCfg = Release|Win32
 		{BC111271-D03E-4887-B05E-C946E26FF585}.Release|x86.Build.0 = Release|Win32
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Debug|x64.ActiveCfg = Debug|x64
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Debug|x64.Build.0 = Debug|x64
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Debug|x86.ActiveCfg = Debug|Win32
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Debug|x86.Build.0 = Debug|Win32
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Release|x64.ActiveCfg = Release|x64
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Release|x64.Build.0 = Release|x64
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Release|x86.ActiveCfg = Release|Win32
+		{086E6F2D-D7A2-44DE-BF94-9FE5BDBD5BEC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

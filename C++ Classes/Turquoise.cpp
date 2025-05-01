@@ -7,25 +7,19 @@ using namespace std;
 Turquoise::Turquoise() : Rock() { ; };
 
 void Turquoise::read(ostream& ostream, istream& istream) {
-	ostream << "Enter details for Turquoise:" << endl;
-	ostream << "Name: ";
-	istream >> name;
-	ostream << "Color: ";
-	istream >> color;
-	ostream << "Matrix: ";
-	istream >> matrix;
-	ostream << "Rock Type: ";
-	int typeInput;
-	istream >> typeInput;
-	type = static_cast<RockType>(typeInput);
+	Rock::read(ostream,istream);
 };
 
 void Turquoise::write(ostream& ostream) {
-	ostream << "Turquoise Details:" << endl;
-	ostream << "Name: " << name << endl;
-	ostream << "Color: " << color << endl;
-	ostream << "Matrix: " << matrix << endl;
-	ostream << "Rock Type: " << static_cast<int>(getType()) << endl; // Fixed static_cast syntax
+	Rock::write(ostream);
+};
+
+void Turquoise::read(ifstream& istream) {
+	Rock::read(istream);
+};
+
+void Turquoise::write(ofstream& ostream) {
+	Rock::write(ostream);
 };
 
 string Turquoise::getName() {

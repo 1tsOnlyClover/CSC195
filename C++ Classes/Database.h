@@ -9,11 +9,14 @@ using namespace std;
 
 class Database {  
 public:  
+
    Database();  
-   vector<Rock*> rocks;  
+   std::vector<std::unique_ptr<Rock>> m_container;
    ~Database(); // Destructor  
    void Create(RockType type); // Updated to use RockType directly  
    void DisplayAll();  
    void Display(const std::string& name);  
    void Display(RockType type);  
+   void Load(const std::string& filename);
+   void Save(const std::string& filename);
 };

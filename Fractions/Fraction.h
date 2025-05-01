@@ -3,7 +3,6 @@
 #include <iostream>
 #include <numbers>
 
-
 namespace mathLib {
 	class Fraction {
 		public:
@@ -41,10 +40,10 @@ namespace mathLib {
             if (other.numerator == 0) {
                 std::cerr << "Error: Cannot divide by zero!" << std::endl;
                 return Fraction(0, 1); //Return a safe value.
-            }
+            } else{}
             int newNumerator = numerator * other.denominator;
             int newDenominator = denominator * other.numerator;
-            return Fraction(newNumerator, newDenominator);
+            return Fraction(newNumerator, newDenominator);}
         }
 		 
 		//Comparison: ==, !=, <, >, <=, >=.

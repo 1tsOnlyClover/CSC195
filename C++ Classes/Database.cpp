@@ -1,8 +1,11 @@
 #include <iostream>
 #include "Database.h"
+#include <string>
+#include <vector>
 
 Database::Database() {
 	// Constructor implementation
+	vector<Rock> rocks;
 };
 Database::~Database() {
 	// Destructor implementation
@@ -23,7 +26,7 @@ void Database::Create(RockType type) {
 		std::cout << "Invalid rock type!" << std::endl;
 		return;
 	}
-	rock->read(std::cout, std::cin);
+	std::cin >> *rock;
 	rocks.push_back(rock);
 };
 void Database::DisplayAll() {
@@ -39,4 +42,30 @@ void Database::Display(const std::string& name) {
 		}
 	}
 	std::cout << "Rock not found!" << std::endl;
-};
+	};
+void Database::Load(const std::string& filename)
+{
+	std::ifstream input(filename);
+	if (input.is_open())
+	{
+			while (!input.eof())
+			{
+				int type;
+				input >> type;
+				Rock* rock = 
+			};
+	}
+}
+
+void Database::Save(const std::string& filename)
+{
+	std::ofstream output(filename);
+	if (output.is_open())
+	{
+		<use for loop to iterate through all animals in the container>
+		{
+			output << <get animal type and cast to int to write> << std::endl;
+			<call animal Write with the file output stream>
+		};
+	}
+}
